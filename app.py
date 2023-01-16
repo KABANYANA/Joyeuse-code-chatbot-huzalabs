@@ -6,17 +6,30 @@ import requests
 import json
 import detectlanguage
 from detectlanguage import simple_detect # import the translator
-
+from flask_sqlalchemy import SQLAlchemy
 from chat import chatBot
 chatBot = chatBot()
+import datetime
 
 
 #import nltk 
 #nltk.download('punkt')
 
 app = Flask(__name__)
-CORS(app)
 
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql+psycop2://joy:LOBNQ22HRiX26coPE7L1C4Ih5A3NWYDN@dpg-cf2kb782i3mnjcg1f6n0-a/chatdb_oh8x"
+
+db = SQLAlchemy(app)
+
+CORS(app)
+class Queries(db.model):
+    id = db.Column(db.Integer, primary_key=True)
+    question = db.Column(db.String(1000))
+    answer = db.Column(db.String(1000))
+    language = db.Column(db.String(5))
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+with app.app_context():
+    db.create_all()  
 #from flask import get_response
 
 class translator:
