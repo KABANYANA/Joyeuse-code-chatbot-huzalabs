@@ -17,19 +17,18 @@ import datetime
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql+psycop2://joy:LOBNQ22HRiX26coPE7L1C4Ih5A3NWYDN@dpg-cf2kb782i3mnjcg1f6n0-a/chatdb_oh8x"
-
-db = SQLAlchemy(app)
+#app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql+psycop2//joyeuse:Og3nR3MnJH2AmAKOuyaKswWaETmq3bm7@dpg-cf37gs9gp3jl0q3eugdg-a.oregon-postgres.render.com/chatdb_knbo"
+#db = SQLAlchemy(app)
 
 CORS(app)
-class Queries(db.model):
-    id = db.Column(db.Integer, primary_key=True)
-    question = db.Column(db.String(1000))
-    answer = db.Column(db.String(1000))
-    language = db.Column(db.String(5))
-    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
-with app.app_context():
-    db.create_all()  
+#class Queries(db.model):
+    #id = db.Column(db.Integer, primary_key=True)
+    #question = db.Column(db.String(1000))
+    #answer = db.Column(db.String(1000))
+    #language = db.Column(db.String(5))
+    #timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+#with app.app_context():
+    #db.create_all()  
 #from flask import get_response
 
 class translator:
