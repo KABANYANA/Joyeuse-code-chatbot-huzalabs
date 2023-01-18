@@ -134,7 +134,7 @@ _Below is an example of how you can instruct your audience on installing and set
    pip install -r requirements.txt
    ```
 4. start the flask using gunicorn
-   ```js
+   ```sh
    gunicorn app:app
    ```
 
