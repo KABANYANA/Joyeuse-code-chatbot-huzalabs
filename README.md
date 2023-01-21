@@ -85,7 +85,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Welcome to our government institution's chatbot! Our chatbot is designed to assist you in finding the information you need on our website. Whether you are looking for information on our services, programs, or resources, our chatbot can help guide you to the right page. Simply type in a keyword or question, and our chatbot will provide you with a list of relevant links. If you can't find what you're looking for, our chatbot will also be able to connect you with a live representative for further assistance. Thank you for choosing our government institution's chatbot as your go-to source for information.
+Welcome to our government institution's chatbot! Our chatbot is designed to assist you in finding the information you need on our website. Whether you are looking for information on our services, programs, or resources, our chatbot can help guide you to the right page. Simply type in a keyword or question, and our chatbot will provide you with a list of relevant links. If you can't find what you're looking for, our chatbot will also be able to connect you with a live representative for further assistance. Thank you for choosing our government institution's chatbot as your go-to source for information
 
 Use the `BLANK_README.md` to get started.
 
